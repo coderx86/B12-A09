@@ -1,0 +1,98 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light. Perfect for beginners and busy plant parents. Known for its striking upright leaves with yellow edges.",
+    "image": "https://i.ibb.co.com/fz8jZQ3S/image.png",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Monstera Deliciosa",
+    "category": "Tropical",
+    "price": 45,
+    "rating": 4.9,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "The iconic Swiss Cheese Plant with stunning split leaves. A statement piece that brings tropical vibes to any room. Loves bright indirect light.",
+    "image": "https://i.ibb.co.com/tw44xY7C/image.png",
+    "providerName": "Tropical Paradise Nursery"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 25,
+    "rating": 4.7,
+    "availableStock": 15,
+    "careLevel": "Easy",
+    "description": "Elegant white blooms and glossy dark leaves. Excellent air purifier and thrives in low light. Tells you when it needs water by drooping slightly.",
+    "image": "https://i.ibb.co.com/QvmRNbKG/image.png",
+    "providerName": "Bloom & Grow Gardens"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Fiddle Leaf Fig",
+    "category": "Statement",
+    "price": 65,
+    "rating": 4.6,
+    "availableStock": 5,
+    "careLevel": "Hard",
+    "description": "A showstopper with large, violin-shaped leaves. Popular among interior designers for its dramatic presence. Requires consistent care and bright light.",
+    "image": "https://i.ibb.co.com/39HtzZp9/image.png",
+    "providerName": "Designer Plants Co."
+  },
+  {
+    "plantId": 5,
+    "plantName": "Pothos Golden",
+    "category": "Trailing",
+    "price": 15,
+    "rating": 4.8,
+    "availableStock": 20,
+    "careLevel": "Easy",
+    "description": "Beautiful trailing vine with heart-shaped leaves splashed with golden yellow. Nearly impossible to kill. Perfect for shelves and hanging baskets.",
+    "image": "https://i.ibb.co.com/Wv3sr6Lf/image.png",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Rubber Plant",
+    "category": "Air Purifier",
+    "price": 35,
+    "rating": 4.5,
+    "availableStock": 12,
+    "careLevel": "Medium",
+    "description": "Bold, burgundy-tinted leaves that add drama to any space. Excellent air purifier and low maintenance. Grows into an impressive indoor tree.",
+    "image": "https://i.ibb.co.com/0jLNFS4D/image.png",
+    "providerName": "Green Thumb Nursery"
+  },
+  {
+    "plantId": 7,
+    "plantName": "ZZ Plant",
+    "category": "Low Light",
+    "price": 28,
+    "rating": 4.7,
+    "availableStock": 18,
+    "careLevel": "Easy",
+    "description": "Virtually indestructible with glossy, waxy leaves. Tolerates low light and irregular watering. Modern aesthetic perfect for offices and dim corners.",
+    "image": "https://i.ibb.co.com/4wTn1g5B/image.png",
+    "providerName": "Modern Botanics"
+  },
+  {
+    "plantId": 8,
+    "plantName": "Bird of Paradise",
+    "category": "Tropical",
+    "price": 75,
+    "rating": 4.9,
+    "availableStock": 4,
+    "careLevel": "Medium",
+    "description": "Stunning banana-like leaves that create an instant tropical paradise. Can grow up to 6 feet indoors. Needs bright light and regular watering.",
+    "image": "https://i.ibb.co.com/WWRLnmww/image.png",
+    "providerName": "Tropical Paradise Nursery"
+  }
+]
