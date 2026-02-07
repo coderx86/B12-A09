@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from './providers/AuthProvider';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import PrivateRoute from './components/PrivateRoute';
+import MyProfile from './pages/MyProfile';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +27,15 @@ const router = createBrowserRouter([
       {
         path: 'register',
         element: <Signup />,
-      }
+      },
+      {
+        path: 'profile',
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        ),
+      },
     ],
   },
 ], {

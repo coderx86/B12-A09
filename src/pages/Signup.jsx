@@ -137,7 +137,7 @@ const Signup = () => {
                   type="text"
                   name="name"
                   placeholder="Enter your name"
-                  className="input input-bordered w-full pl-12"
+                  className="input input-bordered w-full py-4"
                   value={formData.name}
                   onChange={handleInputChange}
                   required
@@ -156,7 +156,7 @@ const Signup = () => {
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="input input-bordered w-full pl-12"
+                  className="input input-bordered w-full py-4"
                   value={formData.email}
                   onChange={handleInputChange}
                   required
@@ -175,7 +175,7 @@ const Signup = () => {
                   type="url"
                   name="photoURL"
                   placeholder="Enter photo URL"
-                  className="input input-bordered w-full pl-12"
+                  className="input input-bordered w-full py-4"
                   value={formData.photoURL}
                   onChange={handleInputChange}
                 />
@@ -193,7 +193,7 @@ const Signup = () => {
                   type={showPassword ? 'text' : 'password'}
                   name="password"
                   placeholder="Create a password"
-                  className="input input-bordered w-full pl-12 pr-12"
+                  className="input input-bordered w-full py-4 pr-12"
                   value={formData.password}
                   onChange={handleInputChange}
                   required
