@@ -2,6 +2,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import RootLayout from './layouts/RootLayout';
 import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { AuthProvider } from './providers/AuthProvider';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +18,14 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      {
+        path: 'login',
+        element: <Login />,
+      },
+      {
+        path: 'register',
+        element: <Signup />,
+      }
     ],
   },
 ], {
@@ -21,7 +34,21 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+      <ToastContainer 
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+    </AuthProvider>
   );
 }
 

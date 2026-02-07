@@ -1,8 +1,21 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { useAuth } from '../providers/AuthProvider';
 import { FaLeaf, FaUserCircle } from 'react-icons/fa';
 import { IoIosLogOut } from "react-icons/io";
 
 const Navbar = () => {
+  const { user, logOut, loading } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logOut();
+    } catch (error) {
+      console.error('Logout error:', error);
+    }
+  };
+
+  const navLinkClasses = ({ isActive }) =>
+    isActive ? 'text-green-400 font-bold text-lg' : 'text-white hover:text-green-300';
 
   return (
     <div>
@@ -39,14 +52,18 @@ const Navbar = () => {
                 <li>
                   <NavLink to="/plants" className="text-white hover:text-green-300 hover:font-bold">Plants</NavLink>
                 </li>
+                {user && (
+                  <>
                     <li>
                       <NavLink to="/profile" className="text-white hover:text-green-300 hover:font-bold">My Profile</NavLink>
                     </li>
                     <li>
-                      <button className="flex items-center text-white hover:text-red-400 hover:font-bold">
+                      <button onClick={handleLogout} className="flex items-center text-white hover:text-red-400 hover:font-bold">
                         LogOut <IoIosLogOut />
                       </button>
                     </li>
+                  </>
+                )}
               </ul>
             </div>
           </div>
@@ -61,33 +78,58 @@ const Navbar = () => {
           <div className="hidden lg:flex">
             <ul className="flex gap-8 font-semibold">
               <li>
-                <NavLink to="/">
+                <NavLink to="/" className={navLinkClasses}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/plants">
+                <NavLink to="/plants" className={navLinkClasses}>
                   Plants
                 </NavLink>
               </li>
+              {user && (
                 <li>
-                  <NavLink to="/profile">
+                  <NavLink to="/profile" className={navLinkClasses}>
                     My Profile
                   </NavLink>
                 </li>
+              )}
             </ul>
           </div>
 
           {/* User Section */}
           <div className="flex gap-4 items-center">
+            {loading ? (
+              <span className="loading loading-ring loading-md text-white"></span>
+            ) : user ? (
               <NavLink to="/profile">
+                {user.photoURL ? (
+                  <img
+                    src={user.photoURL}
+                    alt="User Profile"
+                    className="w-10 h-10 rounded-full ring-2 ring-green-400 ring-offset-2 ring-offset-green-800"
+                    referrerPolicy="no-referrer"
+                  />
+                ) : (
                   <FaUserCircle className="w-10 h-10 text-white" />
+                )}
               </NavLink>
-              <NavLink>
+            ) : null}
+            
+            {user ? (
+              <button
+                className="btn hidden sm:block bg-amber-500 hover:bg-amber-600 border-none text-white font-bold"
+                onClick={handleLogout}
+              >
+                LogOut
+              </button>
+            ) : (
+              <NavLink to="/login">
                 <button className="btn bg-amber-500 hover:bg-amber-600 border-none text-white font-bold">
                   Login
                 </button>
               </NavLink>
+            )}
           </div>
         </div>
       </div>
