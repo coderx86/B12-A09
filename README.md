@@ -2,7 +2,7 @@
 
 GreenNest is a modern, responsive single-page web application for indoor plant enthusiasts. Browse our curated collection of indoor plants, get expert care tips, and book consultations with plant specialists. Features secure Firebase authentication with Google Sign-In support.
 
-**🔗 Live Site:** [GreenNest on Netlify](#)
+**🔗 Live Site:** [GreenNest on Netlify](https://b12a09-sdx86.netlify.app/)
 ---
 
 ## ✨ Key Features
