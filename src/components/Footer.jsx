@@ -4,7 +4,7 @@ import { FaLeaf, FaInstagram, FaFacebook, FaPinterest} from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="bg-base-200 mt-auto">
-      <div className="flex justify-between footer p-10 max-w-7xl mx-auto text-base-content">
+      <div className="flex flex-col md:flex-row justify-between footer p-10 max-w-7xl mx-auto text-base-content">
         {/* Brand Section */}
         <aside>
           <div className="flex items-center gap-2 mb-4">
