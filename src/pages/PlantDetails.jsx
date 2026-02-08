@@ -168,7 +168,7 @@ const PlantDetails = () => {
                 type="text"
                 name="name"
                 placeholder="Enter your name"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
                 value={formData.name}
                 onChange={handleInputChange}
                 required
@@ -183,7 +183,7 @@ const PlantDetails = () => {
                 type="email"
                 name="email"
                 placeholder="Enter your email"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
                 value={formData.email}
                 onChange={handleInputChange}
                 required

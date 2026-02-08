@@ -61,7 +61,7 @@ const Plants = () => {
           <input
             type="text"
             placeholder="Search plants..."
-            className="input input-bordered w-full py-4"
+            className="input input-bordered w-full py-4 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

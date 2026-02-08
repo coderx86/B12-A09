@@ -131,7 +131,7 @@ const Login = () => {
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="input input-bordered w-full py-4"
+                  className="input input-bordered w-full py-4 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
                   value={formData.email}
                   onChange={handleInputChange}
                   required
@@ -150,7 +150,7 @@ const Login = () => {
                   type={showPassword ? 'text' : 'password'}
                   name="password"
                   placeholder="Enter your password"
-                  className="input input-bordered w-full py-4 pr-12"
+                  className="input input-bordered w-full py-4 pr-12 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
                   value={formData.password}
                   onChange={handleInputChange}
                   required
