@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import PrivateRoute from './components/PrivateRoute';
 import MyProfile from './pages/MyProfile';
+import Plants from './pages/Plants';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      {
+        path: 'plants',
+        element: (
+          <PrivateRoute>
+            <Plants />
+          </PrivateRoute>
+        ),
+      }
     ],
   },
 ], {
