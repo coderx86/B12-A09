@@ -10,6 +10,7 @@ import Signup from './pages/Signup';
 import PrivateRoute from './components/PrivateRoute';
 import MyProfile from './pages/MyProfile';
 import Plants from './pages/Plants';
+import PlantDetails from './pages/PlantDetails';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <Plants />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: 'plants/:id',
+        element: (
+          <PrivateRoute>
+            <PlantDetails />
           </PrivateRoute>
         ),
       }
